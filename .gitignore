@@ -1,0 +1,40 @@
+# project
+.vscode/
+.idea/
+.eclipse/
+.settings/
+
+# file systems
+.DS_Store
+.DS_Store?
+
+# build systems
+.gradle/
+**/build/
+!**/src/**/build/
+**/out/
+!**/src/**/out/
+**/target/
+!**/src/**/target/
+
+# binary files
+*.class
+
+# logs
+*.log
+hs_err_pid*
+replay_pid*
+
+# archives
+*.jar
+!samples/*.jar
+
+# workspaces
+**/run/
+!**/src/**/run/
+**/test_run/
+!**/src/**/test_run/
+**/work/
+!**/src/**/work/
+**/workspace/
+!**/src/**/workspace/
