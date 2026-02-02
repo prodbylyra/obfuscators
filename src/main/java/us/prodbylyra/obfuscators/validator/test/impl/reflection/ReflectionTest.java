@@ -29,7 +29,7 @@ public class ReflectionTest implements Test {
         try {
             MethodHandle methodHandle = MethodHandles.publicLookup()
                     .findStatic(
-                            Class.forName("us.prodbylyra.obfuscators.validator.reflection.Reflection"),
+                            Class.forName("us.prodbylyra.obfuscators.validator.test.impl.reflection.Reflection"),
                             "get",
                             MethodType.methodType(long.class, long.class)
                     );

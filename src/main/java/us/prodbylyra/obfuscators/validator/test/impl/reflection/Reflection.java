@@ -1,4 +1,4 @@
-package us.prodbylyra.obfuscators.validator.reflection;
+package us.prodbylyra.obfuscators.validator.test.impl.reflection;
 
 public class Reflection {
     public static long get(long off) {
