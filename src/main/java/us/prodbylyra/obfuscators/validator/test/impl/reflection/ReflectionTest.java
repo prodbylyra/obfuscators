@@ -21,15 +21,15 @@ public class ReflectionTest implements Test {
                     .findStatic(
                             Class.forName("us.prodbylyra.obfuscators.validator.reflection.Reflection"),
                             "get",
-                            MethodType.methodType(long.class)
+                            MethodType.methodType(long.class, long.class)
                     );
 
-            result = (long) methodHandle.invokeExact();
+            result = (long) methodHandle.invokeExact(1337L);
         } catch (Throwable t) {
             throw new IllegalStateException("Failed reflection method invocation", t);
         }
 
-        if (result != 100_000_000L) {
+        if (result != 100_001_337L) {
             throw new IllegalStateException("Mismatched reflection result value");
         }
 
