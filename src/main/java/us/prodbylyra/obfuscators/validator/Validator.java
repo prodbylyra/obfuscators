@@ -4,6 +4,7 @@ import us.prodbylyra.obfuscators.validator.test.Test;
 import us.prodbylyra.obfuscators.validator.test.impl.annotation.AnnotationTest;
 import us.prodbylyra.obfuscators.validator.test.impl.enumeration.EnumerationTest;
 import us.prodbylyra.obfuscators.validator.test.impl.reflection.ReflectionTest;
+import us.prodbylyra.obfuscators.validator.test.impl.tracing.TracingTest;
 
 import java.util.Arrays;
 import java.util.List;
@@ -13,7 +14,8 @@ public class Validator {
         List<Test> testList = Arrays.asList(
                 new AnnotationTest(),
                 new EnumerationTest(),
-                new ReflectionTest()
+                new ReflectionTest(),
+                new TracingTest()
         );
 
         for (Test test : testList) {
